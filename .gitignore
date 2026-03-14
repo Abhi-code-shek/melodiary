@@ -10,7 +10,6 @@ target/
 # ===========================
 # SPRING BOOT / SECRETS
 # ===========================
-application-local.properties
 application-secret.properties
 *.env
 .env
@@ -80,4 +79,4 @@ Thumbs.db
 *.log
 logs/
 
-config/LOCAL/
+config/LOCAL/application.yml
