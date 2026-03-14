@@ -1,0 +1,81 @@
+# ===========================
+# JAVA / MAVEN
+# ===========================
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ===========================
+# SPRING BOOT / SECRETS
+# ===========================
+application-local.properties
+application-secret.properties
+*.env
+.env
+
+# ===========================
+# INTELLIJ IDEA
+# ===========================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ===========================
+# STS (Spring Tool Suite)
+# ===========================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ===========================
+# NETBEANS
+# ===========================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ===========================
+# VS CODE
+# ===========================
+.vscode/
+
+# ===========================
+# REACT / NODE (frontend)
+# ===========================
+node_modules/
+dist/
+build/
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+*.local
+
+# ===========================
+# MAC
+# ===========================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# ===========================
+# LOGS
+# ===========================
+*.log
+logs/
