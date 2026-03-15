@@ -1,6 +1,7 @@
 package com.melodiary.controller;
 
 import com.melodiary.dto.AuthResponse;
+import com.melodiary.dto.LoginRequest;
 import com.melodiary.dto.RegisterRequest;
 import com.melodiary.services.UserService;
 import jakarta.validation.Valid;
@@ -21,5 +22,12 @@ public class AuthController {
     public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
         AuthResponse response = userService.register(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<AuthResponse> login(
+            @Valid @RequestBody LoginRequest request) {
+        AuthResponse response = userService.login(request);
+        return ResponseEntity.ok(response);
     }
 }
